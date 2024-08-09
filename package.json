@@ -4,16 +4,23 @@
   "description": "Api Rest em Node com TDD de um app de finanças",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint src/** test/** --fix"
+    "test": "jest",
+    "lint": "eslint src/** test/** --fix",
+    "start": "nodemon src/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^8.57.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.29.1",
-    "nodemon": "^3.1.4"
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.4",
+    "supertest": "^7.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "4.19.2"
   }
 }
